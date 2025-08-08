@@ -1,5 +1,8 @@
 nav {
+  display: flex;
+  padding: 1em 3em;
   justify-content: end;
+  /* background-color: red; */
   border-bottom: 2px solid #00ff00;
 }
 
@@ -12,27 +15,32 @@ main {
 }
 
 .sobremim {
+  display: flex;
   gap: 0;
   flex-direction: column;
+  height: 100vh;
   justify-content: start;
 }
 
 .informacoes {
+  align-items: center;
+  flex-direction: column;
   height: auto;
 }
 
-.texto {
-  display: none;
+.meunome {
+  color: #00ff00;
+  font-size: 40px;
 }
 
 .imagem {
   margin: 1.2em 0 0 0;
 }
 
-.imagem img {
-  height: 100%;
-  width: 100%;
-}
+  .imagem img{
+    height: 100%;
+    width: 100%;
+  }
 
 .textoPort {
   border-bottom: 2px solid #00ff00;
@@ -43,30 +51,103 @@ main {
   padding: 2em;
 }
 
+.texto {
+  display: none;
+}
+
 .projetos {
   padding: 0;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  color: #0bd904;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
   gap: 2em;
 }
 
 .projeto1 {
-  height: 20em;
+  height: 30em;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-bottom: 2px solid #0bd904;
+}
+
+.descripP1 {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #0bd904;
+  padding-left: 1em;
 }
 
 .img-ling {
   width: 50%;
+  height: 100%;
+  display: flex;
 }
 
 .imgP1 {
   width: 18em;
+  display: flex;
+}
+
+.imgP1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .linguagens {
+  height: 100%;
   padding: 1em 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.linguagens img {
+  height: 50px;
+  width: 50px;
 }
 
 .descripP1 p {
+  height: 100%;
+  color: white;
   font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+}
+.redes {
+  display: flex;
+
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+  padding: 1em;
+}
+
+.redes a {
+  width: 5em;
+  transition: transform 0.3s;
+  color: aliceblue;
+}
+
+.redes a i {
+  font-size: 40px;
+  color: #0bd904;
 }
 
 @media screen and (orientation: portrait) and (max-width: 804px) {
@@ -79,31 +160,50 @@ main {
     padding: 2em;
   }
 
-  .galeria {
-    gap: 1em;
+  .projetos {
+    padding: 0;
   }
 
-  .projeto1 {
-    height: auto;
-    flex-direction: column;
-  }
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
-  .img-ling {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-  }
+.projeto1 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-bottom: 2px solid #0bd904;
+}
 
-  .imgP1 {
-    width: auto;
-    height: 10em;
-  }
+.img-ling {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
-  .descripP1 {
-    height: 13em;
-  }
+.imgP1 {
+  width: auto;
+  height: 10em;
+  display: flex;
+}
+
+.descripP1 {
+  width: 100%;
+  height: 13em;
+  border-left: 2px solid #0bd904;
+  padding-left: 1em;
+}
 
   .descripP1 p {
-    height: 3em;
-  }
+  height: 3em;
+  color: white;
+  font-size: 20px;
+}
+
 }
