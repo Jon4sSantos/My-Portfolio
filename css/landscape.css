@@ -1,0 +1,503 @@
+  nav {
+    display: flex;
+    padding: 1em 3em;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    -style: none;
+    justify-content: center;
+    width: 50em;
+    gap: 2.5em;
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    width: 7em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 20px;
+    border-bottom: 2px solid #00ff00;
+  }
+
+  nav ul li a {
+    display: flex;
+
+    text-decoration: none;
+    color: rgb(46, 102, 39);
+    font-weight: 600;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  nav ul li:hover,
+  nav ul li:hover a {
+    transform: scale(0.9);
+    color: #0bd904;
+    text-decoration: underline;
+    border-bottom: none;
+  }
+
+  main {
+    padding: 2em;
+  }
+
+  .sobremim {
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+    height: 100vh;
+    align-items: center;
+    margin: 1em 0 1em 0;
+    padding: 2em;
+  }
+
+  .informacoes {
+    height: 40em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meunome {
+    color: #00ff00;
+    font-size: 30px;
+  }
+
+  .texto {
+    border-top: 2px solid #00ff00;
+    border-bottom: 2px solid #00ff00;
+		height: auto;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    padding: 2em;
+  }
+
+  .textoPort{
+    display: none;
+  }
+
+  .imagem {
+    display: flex;
+    width: auto;
+    height: 70%;
+    justify-content: center;
+  }  
+	
+  .imagem img:hover {
+    transform: scale(1.2);
+    border-radius: 20px;
+    border: 2px solid rgb(46, 102, 39);
+    box-shadow: none;
+  }
+
+  .projetos {
+    margin-top: 1em;
+    height: 100%;
+    display: flex;
+    gap: 4em;
+    flex-direction: column;
+    padding: 2em 2em 0em 2em;
+  }
+
+  .titulo {
+    margin: 0 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #0bd904;
+  }
+
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .projeto1 {
+    height: 20em;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-bottom: 2px solid #0bd904;
+  }
+
+  .descripP1 p {
+    height: 100%;
+    color: palevioletred;
+    font-size: 30px;
+  }
+
+  .img-ling {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .imgP1 {
+    width: 20em;
+    display: flex;
+  }
+
+  .imgP1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .linguagens {
+    height: 100%;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .linguagens img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .descripP1 {
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #0bd904;
+    padding-left: 1em;
+  }
+
+  .descripP1 p {
+    height: 100%;
+    color: white;
+    font-size: 20px;
+  }
+
+  footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+  }
+  .redes {
+    display: flex;
+
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    padding: 1em;
+  }
+
+  .redes a {
+    width: 5em;
+    transition: transform 0.3s;
+    color: aliceblue;
+  }
+
+  .redes a i {
+    font-size: 40px;
+    color: #0bd904;
+  }
+@media screen and (orientation: landscape) and (max-height: 804px) {
+nav {
+  display: flex;
+  padding: 1em 3em;
+  justify-content: end;
+  /* background-color: red; */
+  border-bottom: 2px solid #00ff00;
+}
+
+nav ul {
+  display: none;
+}
+
+main {
+  padding: 1em;
+}
+
+.sobremim {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: start;
+}
+
+.informacoes {
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.meunome {
+  color: #00ff00;
+  font-size: 40px;
+}
+
+  .imagem img{
+    height: 100%;
+    width: 100%;
+  }
+
+.textoPort {
+  border-bottom: 2px solid #00ff00;
+  height: auto;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  padding: 2em;
+}
+
+.texto {
+  display: none;
+}
+
+.projetos {
+  padding: 0;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  color: #0bd904;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.projeto1 {
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-bottom: 2px solid #0bd904;
+}
+
+.descripP1 {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #0bd904;
+  padding-left: 1em;
+}
+
+.img-ling {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.imgP1 {
+  width: 18em;
+  display: flex;
+}
+
+.imgP1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.linguagens {
+  height: 100%;
+  padding: 1em 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.linguagens img {
+  height: 50px;
+  width: 50px;
+}
+
+.descripP1 p {
+  height: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+}
+.redes {
+  display: flex;
+
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+  padding: 1em;
+}
+
+.redes a {
+  width: 5em;
+  transition: transform 0.3s;
+  color: aliceblue;
+}
+
+.redes a i {
+  font-size: 40px;
+  color: #0bd904;
+}
+
+nav {
+  display: flex;
+  padding: 1em 3em;
+  justify-content: end;
+  /* background-color: red; */
+  border-bottom: 2px solid #00ff00;
+}
+
+nav ul {
+  display: none;
+}
+
+main {
+  padding: 1em;
+}
+
+.sobremim {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: start;
+}
+
+.informacoes {
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.meunome {
+  color: #00ff00;
+  font-size: 40px;
+}
+
+
+  .imagem img{
+    height: 100%;
+    width: 100%;
+  }
+
+.textoPort {
+  border-bottom: 2px solid #00ff00;
+  height: auto;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  padding: 2em;
+}
+
+.texto {
+  display: none;
+}
+
+.projetos {
+  padding: 0;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  color: #0bd904;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.projeto1 {
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-bottom: 2px solid #0bd904;
+}
+
+.descripP1 {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #0bd904;
+  padding-left: 1em;
+}
+
+.img-ling {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.imgP1 {
+  width: 18em;
+  display: flex;
+}
+
+.imgP1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.linguagens {
+  height: 100%;
+  padding: 1em 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.linguagens img {
+  height: 50px;
+  width: 50px;
+}
+
+.descripP1 p {
+  height: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+}
+.redes {
+  display: flex;
+
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+  padding: 1em;
+}
+
+.redes a {
+  width: 5em;
+  transition: transform 0.3s;
+  color: aliceblue;
+}
+
+.redes a i {
+  font-size: 40px;
+  color: #0bd904;
+}
+}
